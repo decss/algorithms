@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Cycled Factorial function
  * 
