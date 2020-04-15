@@ -43,3 +43,12 @@ function factorialRecursive($n)
     return $a[$n];
 }
 ?>
+
+<b>Test</b>
+<pre>
+<?php
+$n = 10;
+echo $n . '! = ' . factorialCycle($n) . "\r\n"
+    . $n . '! = ' . factorialRecursive($n) . "\r\n";
+?>
+</pre>
