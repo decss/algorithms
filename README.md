@@ -5,3 +5,4 @@ Currently implemented:
 - Fibonacci (cycle and recursive)
 - Factorial (cycle and recursive)
 - Array items composition
+- Clock hands Angle Calculator
