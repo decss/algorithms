@@ -105,7 +105,6 @@ function fibCycleNeg($n)
 ?>
 
 
-
 <h2>Test 1</h2>
 <pre>
 <?php

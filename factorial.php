@@ -44,7 +44,6 @@ function factorialRecursive($n)
 ?>
 
 
-
 <b>Test</b>
 <pre>
 <?php

@@ -14,7 +14,6 @@ function arrayComposition(array $input, int $depth = 1, bool $anyLength = false)
         foreach ($input as $value) {
             $result[] = $value;
         }
-    
 
     } else {
         $previous = arrayComposition($input, $depth - 1, $anyLength);
@@ -37,12 +36,14 @@ function arrayComposition(array $input, int $depth = 1, bool $anyLength = false)
 ?>
 
 
-
 <b>Test</b>
 <pre>
 <?php
 $tareSize = [1, 2, 3];
 $anyLength = true;
+
+echo '<b>Alphabet:</b><br>';
+print_r($tareSize);
 
 for ($i = 2; $i < 5; $i++) { 
     echo "<br><b>depth = {$i}:</b><br>";
