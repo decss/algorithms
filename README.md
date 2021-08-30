@@ -6,4 +6,4 @@ Currently implemented:
 - Factorial (cycle and recursive)
 - Array items composition
 - Array range intersect merging
-- Clock hands Angle Calculator
+- Clock hands angle calculator

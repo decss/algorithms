@@ -5,7 +5,7 @@
  * @param  array  $input    Array of range items [[1,5], [4,7], ...]
  * @return array            Result array with non-intersected ranges
  */
-function arrayIntersectMerge(array $input)
+function arrayIntersectMerge(array $input): array
 {
     usort($input, function($a, $b) {return $a[0] > $b[0];});
     $result = [array_shift($input)];

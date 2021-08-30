@@ -4,9 +4,9 @@
  * @param  array        $input     Flat array with values that will be combined
  * @param  int|integer  $depth     Combination depth/length ie 2 for 11, 12, 21, 22
  * @param  bool|boolean $anyLength Add to output results that less then $depth ie 1, 11 for $depth = 3
- * @return [type]                  Result combinations
+ * @return array                   Result combinations
  */
-function arrayComposition(array $input, int $depth = 1, bool $anyLength = false)
+function arrayComposition(array $input, int $depth = 1, bool $anyLength = false): array
 {
     $result = [];
 
