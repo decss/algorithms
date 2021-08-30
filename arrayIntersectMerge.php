@@ -17,13 +17,6 @@ function arrayIntersectMerge(array $input): array
         if ($value[0] >= $last[0] && $value[1] <= $last[1]) {
             // skip
 
-        // Intersect from left
-        } else if (
-            ($value[0] < $last[0] && $value[1] >= $last[0] && $value[1] <= $last[1])
-            || ($value[1] + 1 == $last[0]) // next to the left 
-        ) {
-            $last[0] = $value[0];
-        
         // Intersect from right
         } else if (
             ($value[0] >= $last[0] && $value[0] <= $last[1] && $value[1] > $last[1])
@@ -47,7 +40,7 @@ function arrayIntersectMerge(array $input): array
 <?php
 $inputs = [
     ['2-4', '7-9', '1-3', ],
-    ['7-10', '11-11', '15-15', '12-15', '44-49'],
+    ['7-10', '11-11', '15-15', '12-15', '44-49', '43-43', '50-51', ],
 ];
 foreach ($inputs as $input) {
     $inputArray = [];
