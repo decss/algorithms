@@ -39,18 +39,18 @@ function arrayComposition(array $input, int $depth = 1, bool $anyLength = false)
 <b>Test</b>
 <pre>
 <?php
-$tareSize = [1, 2, 3];
+$array = [1, 2, 3];
 $anyLength = true;
 
 echo '<b>Alphabet:</b><br>';
-print_r($tareSize);
+print_r($array);
 
 for ($i = 0; $i < 5; $i++) { 
     echo "<br><b>depth = {$i}:</b><br>";
-    foreach (arrayComposition($tareSize, $i, $anyLength) as $value) {
+    foreach (arrayComposition($array, $i, $anyLength) as $value) {
         echo implode(':', $value) . '<br>';
     }
-    // print_r(arrayComposition($tareSize, $i, $anyLength));
+    // print_r(arrayComposition($array, $i, $anyLength));
 }
 ?>
 </pre>
